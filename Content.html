@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Shopping-cart</title>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="Header.css" />
+    <link rel="stylesheet" href="Content.css" />
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="img-nav">
+                <img src="img/logo.png" alt="" />
+            </div>
+            <div class="content-nav">
+                <ul>
+                    <li><a href="#">Vinh.Le@Kyanon.Digital</a></li>
+                    <li><a href="#">Trang Chủ</a></li>
+                    <li><a href="#">Sản Phẩm</a></li>
+                    <li><a href="#">Liên Hệ</a></li>
+                    <li><a href="#">Giới Thiệu</a></li>
+                </ul>
+                <form>
+                    <input type="text" name="search" placeholder="Tìm kiếm sản phẩm..." />
+                    <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+                </form>
+            </div>
+            <button id="cart">
+                <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+                Giỏ Hàng
+            </button>
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Giỏ Hàng</h5>
+                        <span class="close">&times;</span>
+                    </div>
+                    <div class="modal-body">
+                        <div class="cart-row">
+                            <span class="cart-item cart-header cart-column">Sản Phẩm</span>
+                            <span class="cart-price cart-header cart-column">Giá</span>
+                            <span class="cart-quantity cart-header cart-column">Số Lượng</span>
+                        </div>
+                        <div class="cart-items">
+
+                        </div>
+                        <div class="cart-total">
+                            <strong class="cart-total-title">Tổng Cộng:</strong>
+                            <span class="cart-total-price">0VNĐ</span>
+                        </div>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary close-footer">Đóng</button>
+                        <button type="button" class="btn btn-primary order">Thanh Toán</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+    <section class="wrapper">
+        <div class="products">
+            <ul>
+
+                <li class="main-product">
+                    <div class="img-product">
+                        <img class="img-prd" src="https://cdn.tgdd.vn/Products/Images/42/228739/iphone-12-pro-xanh-duong-new-600x600-600x600.jpg" alt="">
+                    </div>
+                    <div class="content-product">
+                        <h3 class="content-product-h3">Điện thoại iPhone 12 Pro 512GB</h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">18.690.000₫</span>
+                            </div>
+                            <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="main-product no-margin">
+                    <div class="img-product">
+                        <img class="img-prd" src="https://cdn.tgdd.vn/Products/Images/44/223534/lenovo-ideapad-3-15iil05-i3-81we003rvn-211520-101539-600x600.jpg" alt="">
+                    </div>
+                    <div class="content-product">
+                        <h3 class="content-product-h3">Laptop Lenovo IdeaPad Slim 3 15IIL05 i3 1005G1/4GB/512GB/Win10 (81WE003RVN)</h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">14.540.000₫</span>
+                            </div>
+                            <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="main-product">
+                    <div class="img-product">
+                        <img class="img-prd" src="https://product.hstatic.net/1000356871/product/tai-nghe-kiem-am-takstar-hd2000_c4e39ba1f6ed412b98057392212fae4d_1024x1024.jpg" alt="">
+                    </div>
+                    <div class="content-product">
+                        <h3 class="content-product-h3">Tai nghe kiểm âm Takstar HD2000, Headphone Studio</h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">690.000₫</span>
+                            </div>
+                            <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="main-product">
+                    <div class="img-product">
+                        <img class="img-prd" src="https://bofit.vn/wp-content/uploads/2020/03/gian-ta-da-nang-bofit-g7.jpg" alt="">
+                    </div>
+                    <div class="content-product">
+                        <h3 class="content-product-h3">Giàn tạ đa năng BoFit G7</h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">14.6-590.000₫</span>
+                            </div>
+                            <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="main-product">
+                    <div class="img-product">
+                        <img class="img-prd" src="https://cdn.tgdd.vn/Products/Images/42/228743/iphone-12-pro-max-vang-new-600x600-1-600x600.jpg" alt="">
+                    </div>
+                    <div class="content-product">
+                        <h3 class="content-product-h3">iPhone 12 Pro Max 256GB</h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">34.690.000₫</1span>
+                        </div>
+                        <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                    </div>
+                </li>
+                <li class="main-product">
+                    <div class="img-product">
+                        <img class="img-prd" src="https://cdn.tgdd.vn/Products/Images/42/230867/samsunggalaxynote20ultratrangnew-600x600-600x600.jpg" alt="">
+                    </div>
+                    <div class="content-product">
+                        <h3 class="content-product-h3">Samsung Galaxy Note 20 Ultra 5G Trắng</h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">32.990.000₫</1span>
+                        </div>
+                        <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                    </div>
+                </li>
+                <li class="main-product">
+                    <div class="img-product">
+                        <img class="img-prd" src="https://cdn.tgdd.vn/Products/Images/2162/202728/loa-keo-lg-rl2-10-600x600.jpg" alt="">
+                    </div>
+                    <div class="content-product">
+                        <h3 class="content-product-h3">LG Smart TV OLED 48C1PTB</h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">35.900.000₫</1span>
+                        </div>
+                        <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                    </div>
+                </li>
+                <li class="main-product">
+                    <div class="img-product">
+                        <img class="img-prd" src="https://cdn.tgdd.vn/Products/Images/2162/223940/lg-rn7-9-600x600.jpg" alt="">
+                    </div>
+                    <div class="content-product">
+                        <h3 class="content-product-h3">Aqua Inverter 8 Kg AQD-A800F W</h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">7.390.000₫</1span>
+                        </div>
+                        <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                    </div>
+                </li>
+            </li>
+        </ul>
+    </div>
+</section>
